@@ -87,6 +87,7 @@ stopButton.addEventListener('click', () => {
     arrows = [];
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     music.pause();
+    music.currentTime = 0;
 })
 
 
