@@ -1,19 +1,36 @@
 
+html, body {
+  min-height: 100%;           
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
 body {
-  margin: 0;               /* pas de marge autour de la page */
-  padding: 0;              /* pas de padding par défaut */
-  font-family: Arial, sans-serif; /* police simple et lisible */
-  background-color: #111;  /* fond sombre (tu peux changer) */
-  color: #fff;             /* texte en blanc pour contraste */
-  text-align: center;      /* centre le texte */
+  font-family: Arial, sans-serif; 
+  background-color: #111;  
+  color: #fff;            
+  text-align: center;     
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: clamp(8px, 6vw, 64px);
+  /* min 24px, max 64px, s’adapte proportionnellement à 6% de la largeur de l’écran */
+  color: #0ff;
+  text-transform: uppercase;
 }
 
 #gameScreen {
-    width : 60vw;
-    Height : 37vw;
+    display: block;
+    width : 70vw;
+    height: 70vh;
     border: 4px solid;
-    border-radius: 10px;     /* coins arrondis */
-    padding: 20px;
+    border-radius: 10px;   
     animation: borderColors 3s infinite linear;
 }
 
@@ -34,11 +51,10 @@ body {
 }
 
 #btn-section {
-    display: flex;
+  margin: 10px 0;
+  display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .btn {
@@ -94,7 +110,7 @@ body {
 /* @NEONSHINE */
 
 .neonShine {
-  font-size: 4rem;
+  font-size: clamp(24px, 6vw, 64px);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
