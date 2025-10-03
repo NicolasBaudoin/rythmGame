@@ -1,0 +1,10 @@
+
+
+#gameScreen {
+    border: 1px solid black;
+    width : 70vw;
+    Height : 50vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
