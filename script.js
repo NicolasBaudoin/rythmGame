@@ -10,6 +10,8 @@ let score = 0;
 let gameRunning = false;
 
 
+
+// RESPONSIVE CANVAS
 function resizeCanvas() {
   const h1Height = document.querySelector("h1").offsetHeight;
   const btnHeight = document.querySelector("#btn-section").offsetHeight;
